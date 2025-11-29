@@ -17,13 +17,13 @@
         if(volume == undefined){
             $(".volumeIcon").click();
         }
-        // 默认1倍速，这里可以根据需求修改
+        // 默认1倍速（这里可以根据需求修改）
         v.playbackRate = 1;
         // 如果被暂停，自动播放
         if (v.paused) v.play();
 
-        // 进度 ≥ 99.9% 就认为结束
-        if (v.duration && v.currentTime / v.duration >= 0.999) {
+        // 进度 ≥ 95.0% 就认为结束（这里可以根据需求修改）
+        if (v.duration && v.currentTime / v.duration >= 0.95) {
             console.log('进度 ≥ 99.9% 就认为结束');
             const url = new URL(location.href);
             const fid = parseInt(url.searchParams.get('fileId'));
@@ -37,3 +37,4 @@
     }, 1000);
 
 })();
+
