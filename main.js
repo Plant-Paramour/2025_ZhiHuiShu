@@ -24,7 +24,7 @@
 
         // 进度 ≥ 95.0% 就认为结束（这里可以根据需求修改）
         if (v.duration && v.currentTime / v.duration >= 0.95) {
-            console.log('进度 ≥ 99.9% 就认为结束');
+            console.log('进度 ≥ 95.0% 就认为结束');
             const url = new URL(location.href);
             const fid = parseInt(url.searchParams.get('fileId'));
             if (!isNaN(fid)) {
@@ -37,4 +37,5 @@
     }, 1000);
 
 })();
+
 
