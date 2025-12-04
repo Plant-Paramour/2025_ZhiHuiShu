@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         智慧树知自动播放
+// @name         智慧树(知到网页版)自动播放
 // @match        *://*.zhihuishu.com/*
 // @author       Plant-Paramour
 // ==/UserScript==
@@ -37,5 +37,6 @@
     }, 1000);
 
 })();
+
 
 
